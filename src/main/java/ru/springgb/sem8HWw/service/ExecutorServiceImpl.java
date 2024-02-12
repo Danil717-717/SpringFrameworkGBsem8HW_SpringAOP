@@ -42,6 +42,7 @@ public class ExecutorServiceImpl implements ExecutorService {
         Executor executorStaraya = getExecutor(id);
         if (executorStaraya != null) {
             executorStaraya.setName(executor.getName());
+            executorStaraya.setTasks(executor.getTasks());
         }
         return executorStaraya;
     }

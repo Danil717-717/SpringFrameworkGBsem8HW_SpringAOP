@@ -18,16 +18,13 @@
     <h1>-------------------------------------------------</h1>
 
 
-<!--    <div>-->
-<!--        <form th:method="POST" th:action="@{/index/tasks/executor/{id}(id=${task.id})}" th:object="${executor}" >-->
-<!--            <div class="descriptionform">-->
-<!--                <label for="name">Executor Name</label>-->
-<!--                <input type="text" th:field="*{name}" id="name"></input>-->
-<!--&lt;!&ndash;                <span th:if="${#fields.hasErrors('name')}" th:errors="*{executor.name}"></span>&ndash;&gt;-->
-<!--            </div>-->
-<!--            <input type="submit" value="Add Executor!"/></form>-->
-
-<!--    </div>-->
+    <div>
+        <form th:action="@{/index/tasks/executors/{id}(id=${task.id})}" method="POST">
+            <input type="text" name="name" th:value="${name}" placeholder="Input name executor" size="50">
+            <button type="submit" class="btn_info" >Add  Executor</button>
+            <button type="reset" class="btn_info" >Reset</button>
+        </form>
+    </div>
 
 
 

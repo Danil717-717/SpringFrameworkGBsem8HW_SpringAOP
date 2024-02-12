@@ -14,11 +14,17 @@
 
     <h1>-------------------------------------------------</h1>
 
-<!--    <div>-->
-<!--        <form th:method="GET" th:action="@{/index/executors/add/{id}(id=${executor.id})}" th:object="${executor}" >-->
-<!--            <input type="submit" value="AddTasks!"/></form>-->
-
-<!--    </div>-->
+    <div>
+        <form th:action="@{/index/executors/tasks/{id}(id=${executor.id})}" method="POST">
+            <input type="text" name="name" th:value="${description}" placeholder="Input description task" size="50">
+            <select name="status" id="status">
+                <option th:each="status : ${T(ru.springgb.sem8HWw.Task.Status).values()}"
+                        th:value="${status}" th:text="${status}"></option>
+            </select>
+            <button type="submit" class="btn_info" >Add  Task</button>
+            <button type="reset" class="btn_info" >Reset</button>
+        </form>
+    </div>
 
 </body>
 </html>

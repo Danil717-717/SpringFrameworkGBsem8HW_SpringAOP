@@ -20,7 +20,7 @@ import java.util.List;
 public class Task {
 
 
-    public enum Status{
+    public enum Status {
         NOT_STARTED,
         IN_PROGRESS,
         COMPLETED;
@@ -32,7 +32,7 @@ public class Task {
     private Long id;
 
     @NotEmpty
-    @Column(nullable = false)
+    @Column(name = "description_task", nullable = false)
     private String description;
 
 

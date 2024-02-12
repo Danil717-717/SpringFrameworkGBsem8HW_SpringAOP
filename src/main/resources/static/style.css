@@ -75,10 +75,28 @@ form{
 .tablediv{
     justify-content: center;
     display: flex;
+
+
 }
 
 .tabletask{
 
+    width: 1000px;
+}
+
+.idTask{
+    word-wrap: break-word;
+    max-width: 20px;
+}
+
+.descriptionTask{
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+.completionTimeTask{
+    word-wrap: break-word;
+    max-width: 160px;
 }
 
 .formreg{

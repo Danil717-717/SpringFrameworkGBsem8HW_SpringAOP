@@ -27,6 +27,8 @@ public interface TaskService {
 
     Task createExecutorForTask(Long id, Executor executor);
 
+    void createTaskForExecutor(Long id, Task task);
+
     Task assignExecutor(Long id, Long executorId);
     Executor assignTask(Long id, Long taskId);
     List<Task> getTasksExecutor(Long id);

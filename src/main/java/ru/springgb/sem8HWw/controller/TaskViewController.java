@@ -95,8 +95,8 @@ public class TaskViewController {
         if (result.hasErrors()) {
             return "updateTask";
         }
-        task.setId(id);
-        taskService.apdateTask(task);
+        Task task1= taskService.updateTask(task.getId(),task);
+        taskService.save(task1);
         return "redirect:/index/tasks";
     }
     @GetMapping("/tasks/updateTask/{id}")
@@ -130,8 +130,17 @@ public class TaskViewController {
     @PostMapping("/tasks/executors/{id}")
     public String addExecutorInTask(@PathVariable Long id,@ModelAttribute("executor") @Valid Executor executor){
         taskService.createExecutorForTask(id,executor);
-        return "redirect:/index/taskProfile";
+        return "redirect:/index/tasks";
     }
+
+    @PostMapping("/executors/tasks/{id}")
+    public String addTaskInExecutor(@PathVariable Long id,@ModelAttribute("task") @Valid Task task){
+        taskService.createTaskForExecutor(id,task);
+        return "redirect:/index/executors";
+    }
+
+
+
     ///////
 
 /////////// удаление

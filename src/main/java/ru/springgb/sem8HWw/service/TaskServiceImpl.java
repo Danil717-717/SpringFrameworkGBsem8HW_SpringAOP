@@ -34,10 +34,26 @@ public class TaskServiceImpl implements TaskService {
     @TrackUserAction
     @Override
     public Task createExecutorForTask(Long id, Executor executor) {
-        Executor executorNew = save(executor);
-        Task taskNew = getTaskById(id);
-        taskNew.addExecutor(executorNew);
-        return taskRepository.save(taskNew);
+        save(executor);
+        Task task = getTaskById(id);
+        task.addExecutor(executor);
+        updateTask(task.getId(),task);
+        taskRepository.save(task);
+        return task;
+    }
+
+    @TrackUserAction
+    @Override
+    public void createTaskForExecutor(Long id, Task task) {
+        Executor executor = findByIdExecutor(id);
+        executor.addTask(task);
+        save(task);
+        //taskNew.setId(task.getId());
+        //save(task);
+//        Executor executor = findByIdExecutor(id);
+//        executor.addTask(task);
+//        executorService.updateExecutor(executor.getId(),executor);
+//        executorService.save(executor);
 
     }
 
@@ -78,6 +94,7 @@ public class TaskServiceImpl implements TaskService {
             taskStaraya.setDescription(task.getDescription());
             taskStaraya.setStatus(task.getStatus());
             taskStaraya.setCompletionTime(task.getCompletionTime());
+            taskStaraya.setExecutors(task.getExecutors());
         }
         return taskStaraya;
     }

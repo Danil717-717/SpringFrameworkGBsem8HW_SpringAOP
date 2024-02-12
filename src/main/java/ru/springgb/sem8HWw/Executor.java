@@ -23,10 +23,14 @@ public class Executor {
     private Long id;
 
     @NotEmpty
-    @Column(nullable = false)
+    @Column(name = "executor_name", nullable = false)
     private String name;
 
     @ManyToMany
+    @JoinTable(
+            name = "task_executers",
+            joinColumns = @JoinColumn(name = "executor_id"),
+            inverseJoinColumns = @JoinColumn(name = "task_id"))
     private List<Task> tasks = new ArrayList<>();
 
     public void addTask(Task task) {
@@ -43,4 +47,12 @@ public class Executor {
         }
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", tasks=" + tasks +
+                '}';
+    }
 }
