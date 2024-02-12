@@ -1,0 +1,26 @@
+Mon Feb 12 12:57:39 MSK 2024 - Task ru.springgb.sem6HW.service.TaskServiceImpl.createTask(Task) start exec 
+Task ru.springgb.sem6HW.service.TaskServiceImpl.createTask(Task) executed in 9ms
+Mon Feb 12 12:57:41 MSK 2024 - Task ru.springgb.sem6HW.service.TaskServiceImpl.getTaskById(Long) start exec 
+Task ru.springgb.sem6HW.service.TaskServiceImpl.getTaskById(Long) executed in 3ms
+Mon Feb 12 12:57:46 MSK 2024 - Task ru.springgb.sem6HW.service.TaskServiceImpl.apdateTask(Task) start exec 
+Task ru.springgb.sem6HW.service.TaskServiceImpl.apdateTask(Task) executed in 6ms
+Mon Feb 12 12:59:01 MSK 2024 - Task ru.springgb.sem6HW.service.TaskServiceImpl.createTask(Task) start exec 
+Mon Feb 12 12:59:01 MSK 2024 - Task ru.springgb.sem6HW.service.TaskServiceImpl.createTask(Task) executed in 8ms
+Mon Feb 12 12:59:29 MSK 2024 - void ru.springgb.sem6HW.service.TaskServiceImpl.deleteById(Long) start exec 
+Mon Feb 12 12:59:29 MSK 2024 - void ru.springgb.sem6HW.service.TaskServiceImpl.deleteById(Long) executed in 6ms
+Mon Feb 12 13:42:44 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.createTask(Task) start exec 
+Mon Feb 12 13:42:44 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.createTask(Task) executed in 37ms
+Mon Feb 12 13:42:46 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) start exec 
+Mon Feb 12 13:42:46 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) executed in 14ms
+Mon Feb 12 13:42:51 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) start exec 
+Mon Feb 12 13:42:51 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) executed in 2ms
+Mon Feb 12 13:43:25 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) start exec 
+Mon Feb 12 13:43:25 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.getTaskById(Long) executed in 1ms
+Mon Feb 12 13:43:30 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.apdateTask(Task) start exec 
+Mon Feb 12 13:43:30 MSK 2024 - Task ru.springgb.sem8HWw.service.TaskServiceImpl.apdateTask(Task) executed in 22ms
+Mon Feb 12 13:43:33 MSK 2024 - void ru.springgb.sem8HWw.service.TaskServiceImpl.deleteById(Long) start exec 
+Mon Feb 12 13:43:33 MSK 2024 - void ru.springgb.sem8HWw.service.TaskServiceImpl.deleteById(Long) executed in 17ms
+Mon Feb 12 13:43:48 MSK 2024 - Executor ru.springgb.sem8HWw.service.ExecutorServiceImpl.save(Executor) start exec 
+Mon Feb 12 13:43:48 MSK 2024 - Executor ru.springgb.sem8HWw.service.ExecutorServiceImpl.save(Executor) executed in 5ms
+Mon Feb 12 13:43:59 MSK 2024 - Executor ru.springgb.sem8HWw.service.ExecutorServiceImpl.apdateExecutor(Executor) start exec 
+Mon Feb 12 13:43:59 MSK 2024 - Executor ru.springgb.sem8HWw.service.ExecutorServiceImpl.apdateExecutor(Executor) executed in 5ms
